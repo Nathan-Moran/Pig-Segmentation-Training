@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['pig-1', 'pig-2', 'pig-3', 'pig-4', 'pig-5']
+
+roboflow:
+  workspace: harbin-institute-of-technologycontrol-engineering
+  project: pig_detect-yvs6s
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/harbin-institute-of-technologycontrol-engineering/pig_detect-yvs6s/dataset/4
