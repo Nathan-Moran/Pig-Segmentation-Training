@@ -54,3 +54,21 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # import os
+    # import glob
+    #
+    # # Point this to your labels folder
+    # label_dir = "datasets/pig-segmentation-HIT/train/labels"
+    #
+    # print(f"Scanning {label_dir}...")
+    # for filepath in glob.glob(os.path.join(label_dir, "*.txt")):
+    #     with open(filepath, "r") as f:
+    #         lines = f.readlines()
+    #         for i, line in enumerate(lines):
+    #             parts = line.strip().split()
+    #             # A segmentation mask has > 5 numbers (class + many coordinates)
+    #             # A box has exactly 5 numbers (class x y w h)
+    #             if len(parts) == 5:
+    #                 print(f"⚠️ BAD LABEL FOUND: {filepath} (Line {i + 1})")
+    #                 print("   -> This file contains a BOX, not a SEGMENT.")
+    #                 print("   -> Delete this line or the whole file to fix the error.")
