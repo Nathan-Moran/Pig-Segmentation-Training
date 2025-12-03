@@ -51,9 +51,15 @@ def main():
     metrics = model.val()
     print(f"Final Mask mAP: {metrics.seg.map50_95}")
 
+def test_model():
+    model = YOLO("pig_project/pig_checkerboard_v13/weights/best.pt")
+
+    results = model.predict(source='image.jpg', save=True, show=True)
+
 
 if __name__ == '__main__':
     main()
+    test_model()
     # import os
     # import glob
     #
