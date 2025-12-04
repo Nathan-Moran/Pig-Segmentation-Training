@@ -14,7 +14,7 @@ def main():
     results = model.train(
         # --- PATHS ---
         # Update this to point to your specific yaml file
-        data="datasets/pig-segmentation-HIT/data.yaml",
+        data="datasets/1600-pig-dataset/data.yaml",
 
         # --- OUTPUT ---
         project="pig_project",  # Folder where results save
