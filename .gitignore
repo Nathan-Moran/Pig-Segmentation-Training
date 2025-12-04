@@ -1,7 +1,7 @@
 # created by virtualenv automatically
-*.txt
-*.jpg
-*.png
-datasets/
+#*.txt
+#*.jpg
+#*.png
+#datasets/
 *.idea
 *.venv
